@@ -1,0 +1,30 @@
+1. This program will store integers entered by a user into an array. It then calls bubbleSort to sort the
+array. Study the code in bubbleSort to refresh your memory on Bubble Sort algorithm and answer
+the following questions:
+
+a. Why do we need to pass the size of array to the function?
+
+The reaons why we need to pass the size is due to the reason that we are not addressing arr[]. Since we are not adressing the 
+array arr[] we not sending the orginal array we are simply just sending array to the stack and anything done to arr[] after 
+the function will not be saved.
+
+b. Is the original array (the one being passed into the function) changed at the end of this function?
+
+No, the orginal array doesn't change after the function due to reason we are sending arr[] address.
+
+c. Why do you think a new array (s_array) is needed to store the result of the sorted values (why not
+update the array as we sort)? Hint: look at what the main function does.
+
+The reason we make a new array is due to the reason we copying the orginals array data. In the main function the it sorts the 
+array and then sends the orginal array seperatly.
+
+
+2. Once you remember how Bubble Sort works, re-write the code so that you are accessing the array’s
+content using pointer notations (*s_arr), i.e., you cannot use s_arr[j] anymore. Comment out
+the original code so the algorithm will not be run twice.
+
+
+3. After the array is sorted, the program will ask user to enter a key to search for in the sorted array. It will
+then call bSearch to perform a Binary Search on the array. Complete the bSearch function so that it
+implements Binary Search recursively (no loop!). You must use pointer notations here as well. Pay
+attention to what is written in main so your bSearch will return an appropriate value. 

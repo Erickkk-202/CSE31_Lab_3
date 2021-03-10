@@ -1,0 +1,57 @@
+TPS #1
+Erick Vargas
+Amir miarj
+
+
+1. Name the 3 pools for memory and what kind of variables will be stored in each pool.
+The three different pools of memory: a static, stack, heap. Static is a global variable that can be used throughtout the code.
+stack is a local variable and heap is dynamic storage.
+
+
+2. Open mem.c with your favorite text editor and discuss the following questions with your partner:
+a. How many variables are declared?
+
+There are 3 variables are declared.
+
+b. How many of them are pointers? What type of data does each pointer point to?
+
+There is 2 pointers. The pointer ptr is points to num and handle points to ptr which points to num.
+
+c. Which pool of memory are these variables stored in?
+
+They all are stored in the stack
+
+d. Which pool of memory will the pointer ptr point to in line 12.
+
+It points too the heap since malloc is being called.
+
+3. Using a piece of paper (or a drawing app), draw the 3 pools of memory and indicate the locations (in
+which pool?) of the variables in mem.c using boxes (like what we did in lecture). Label the boxes with
+variable names, their content, and their addresses. You will need to insert extra code to obtain the
+addresses of these variables.
+
+
+4. In the same drawing, use arrows to connect each pointer to its destination
+
+
+
+
+
+TPS #2
+
+1. Open NodeStruct.c and discuss what this program does
+I think that nodeStruct.c declares  pointer and allocated memory in the heap for a Node Struct. Then assigns node head to the two values by pointers.
+
+
+
+2. Insert extra code to print out the value of head, addresses of head, iValue, fValue, and next pointed
+by head.
+Done.
+
+
+3. Based on the addresses of the members of Node structure, what do you observe about how structures
+are stored in memory? What is the relationship between the pointer (head) and its destination (the
+Node structure)?
+
+Head Points the Node stuct and stores them one after another.That is why it is four bits apart since each memory takes 4 bits.
+
